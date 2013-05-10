@@ -1,0 +1,24 @@
+Esta aplicacion esta basada en la aplicacion Ettercap, para su funcionamiento,
+se requere tener la version mas reciente.
+
+[1] Descarga la ultima version de la pagina oficial:
+http://ettercap.github.io/ettercap/downloads.html
+
+[2] Una ves descargado el archivo se descomprime en terminal y se ingresa a la
+carpeta de ettercap.
+
+[3] Se ejecuta los siguientes comandos:
+    $ mkdir build
+    $ cd build
+    $ cmake ../
+    $ make
+    $ sudo make install
+
+[4] En caso de obtener un error de dependencias no encontradas, ejecute el
+siguiente comando para instalar las dependencias:
+    $ sudo apt-get install libnet1-dev libcurl4-openssl-dev libncurses5-dev libncursesw5-dev python-gtk2-dev libpcap0.8-dev bison flex
+    $ make clean-all
+    $ make
+    $ sudo make install
+
+Y listo!
